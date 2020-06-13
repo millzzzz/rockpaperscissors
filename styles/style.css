@@ -1,0 +1,96 @@
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+header h1 {
+  padding: 100px;
+  color: #127681;
+  background: #f4f6ff;
+}
+
+.scoreboard {
+  width: 400px;
+  margin: 0 auto;
+  padding: 60px;
+  position: relative;
+  font-weight: 800;
+}
+.scoreboard #user-label {
+  position: absolute;
+  top: 30px;
+  left: 99px;
+}
+.scoreboard #computer-label {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+}
+.scoreboard h1 {
+  font-size: 60px;
+}
+.scoreboard h1 span {
+  color: #f3c623;
+}
+
+#action-message {
+  animation: color-change 1s infinite;
+}
+@keyframes color-change {
+  0% {
+    color: #f3c623;
+  }
+  25% {
+    color: #f4f6ff;
+  }
+  50% {
+    color: #f3c623;
+  }
+  100% {
+    color: #f4f6ff;
+  }
+}
+
+body {
+  height: 100vh;
+  color: #f4f6ff;
+  background: #10375c;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.choices {
+  padding: 100px;
+}
+.choices .choice {
+  padding: 40px;
+  margin: 0 20px;
+  border-radius: 15%;
+  border: 3px solid #f4f6ff;
+}
+.choices .choice h1 {
+  font-size: 100px;
+}
+.choices .choice:hover {
+  background: #127681;
+}
+
+@media (max-width: 667px) {
+  .choices {
+    flex-direction: column;
+  }
+  .choices .choice {
+    margin: 20px 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

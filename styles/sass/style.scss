@@ -1,0 +1,105 @@
+//sass --watch styles/sass/style.scss styles/style.css
+$primaryPadding: 100px;
+$paletteYellow: #f3c623;
+$paletteGreen: #127681;
+$paletteBlue: #10375c;
+$paletteWhite: #f4f6ff;
+
+%flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+header {
+    h1 {
+        padding: $primaryPadding;
+        color: $paletteGreen;
+        background: $paletteWhite;
+    }
+}
+
+.scoreboard {
+    width: 400px;
+    margin: 0 auto;
+    padding: 60px;
+    position: relative;
+    font-weight: 800;
+
+    #user-label {
+        position: absolute;
+        top: 30px;
+        left: 99px;
+    }
+
+    #computer-label {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+    }
+
+    h1 {
+        font-size: 60px;
+
+        span {
+            color: $paletteYellow;
+        }
+    }
+}
+
+#action-message {
+    animation: color-change 1s infinite;
+
+    @keyframes color-change {
+        0% { color: $paletteYellow; }
+        25% { color: $paletteWhite;}
+        50% { color: $paletteYellow; }
+        100% { color: $paletteWhite; }
+      }
+}
+
+body {
+    height: 100vh;
+    color: $paletteWhite;
+    background: $paletteBlue;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.choices {
+    @extend %flexbox;
+    padding: $primaryPadding;
+
+    .choice {
+        padding: 40px;
+        margin: 0 20px;
+        border-radius: 15%;
+        border: 3px solid $paletteWhite;
+
+        h1 {
+            font-size: 100px;
+        }
+    }
+
+    .choice:hover {
+        background: $paletteGreen;
+    }
+}
+
+@media (max-width: 667px) {
+    .choices {
+        flex-direction: column;
+
+        .choice{
+            margin: 20px 20px;
+        }
+    }
+}
