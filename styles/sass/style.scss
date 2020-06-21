@@ -20,10 +20,11 @@ $paletteWhite: #f4f6ff;
 }
 
 header {
+    width: 100vw;
+    background: $paletteWhite;
+    padding: $primaryPadding;
     h1 {
-        padding: $primaryPadding;
         color: $paletteGreen;
-        background: $paletteWhite;
     }
 }
 

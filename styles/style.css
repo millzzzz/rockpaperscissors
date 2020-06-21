@@ -12,10 +12,13 @@
   text-align: center;
 }
 
-header h1 {
-  padding: 100px;
-  color: #127681;
+header {
+  width: 100vw;
   background: #f4f6ff;
+  padding: 100px;
+}
+header h1 {
+  color: #127681;
 }
 
 .scoreboard {
