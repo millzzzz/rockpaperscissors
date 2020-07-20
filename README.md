@@ -1,5 +1,7 @@
 # Rock Paper Scissors ✂️
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/14e35872-7271-4392-b919-38dc1bcd0329/deploy-status)](https://app.netlify.com/sites/areyoubored/deploys)
+
 A simple rock paper scissors game that can be played [here](https://areyoubored.netlify.app/)
 
 ## Purpose
