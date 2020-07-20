@@ -57,7 +57,7 @@ function decision(userChoice) {
     //Draw Switch
     switch (`${userChoice} vs ${computerChoice}`) {
         case 'rock vs rock':
-            result.textContent =  `It's a draw`
+            result.textContent = `It's a draw`
             console.log('DRAW')
             break;
         case 'paper vs paper':

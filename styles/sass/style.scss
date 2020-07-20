@@ -23,6 +23,7 @@ header {
     width: 100vw;
     background: $paletteWhite;
     padding: $primaryPadding;
+
     h1 {
         color: $paletteGreen;
     }
@@ -60,10 +61,18 @@ header {
     animation: color-change 1.5s infinite;
 
     @keyframes color-change {
-        33% { color: $paletteYellow}
-        66% { color: $paletteWhite; }
-        100% { color: $paletteGreen; }
-      }
+        33% {
+            color: $paletteYellow
+        }
+
+        66% {
+            color: $paletteWhite;
+        }
+
+        100% {
+            color: $paletteGreen;
+        }
+    }
 }
 
 body {
@@ -86,6 +95,7 @@ body {
         transition-duration: 0.3s;
         transition-property: transform;
         transition-timing-function: ease-out;
+
         h1 {
             font-size: 100px;
         }
@@ -101,7 +111,7 @@ body {
     .choices {
         flex-direction: column;
 
-        .choice{
+        .choice {
             margin: 20px 20px;
         }
     }

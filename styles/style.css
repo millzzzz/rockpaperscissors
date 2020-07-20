@@ -17,6 +17,7 @@ header {
   background: #f4f6ff;
   padding: 100px;
 }
+
 header h1 {
   color: #127681;
 }
@@ -28,19 +29,23 @@ header h1 {
   position: relative;
   font-weight: 800;
 }
+
 .scoreboard #user-label {
   position: absolute;
   top: 30px;
   left: 99px;
 }
+
 .scoreboard #computer-label {
   position: absolute;
   top: 30px;
   right: 70px;
 }
+
 .scoreboard h1 {
   font-size: 60px;
 }
+
 .scoreboard h1 span {
   color: #f3c623;
 }
@@ -48,13 +53,16 @@ header h1 {
 #action-message {
   animation: color-change 1.5s infinite;
 }
+
 @keyframes color-change {
   33% {
     color: #f3c623;
   }
+
   66% {
     color: #f4f6ff;
   }
+
   100% {
     color: #127681;
   }
@@ -71,6 +79,7 @@ body {
 .choices {
   padding: 100px;
 }
+
 .choices .choice {
   padding: 40px;
   margin: 0 20px;
@@ -80,9 +89,11 @@ body {
   transition-property: transform;
   transition-timing-function: ease-out;
 }
+
 .choices .choice h1 {
   font-size: 100px;
 }
+
 .choices .choice:hover {
   background: #f4f6ff;
   transform: translateY(-8px);
@@ -92,6 +103,7 @@ body {
   .choices {
     flex-direction: column;
   }
+
   .choices .choice {
     margin: 20px 20px;
   }
